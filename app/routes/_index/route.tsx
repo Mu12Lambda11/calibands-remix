@@ -3,6 +3,7 @@ import styles from './_index.module.scss';
 import { LinksFunction, LoaderFunctionArgs, MetaFunction } from '@remix-run/node';
 import commonStyles from '~/styles/common-styles.module.scss';
 import { getUrlOriginWithPath } from '~/utils';
+import styles0 from './route.module.scss';
 
 export const loader = ({ request }: LoaderFunctionArgs) => {
     return { canonicalUrl: getUrlOriginWithPath(request.url) };
@@ -11,17 +12,17 @@ export const loader = ({ request }: LoaderFunctionArgs) => {
 export default function HomePage() {
     return (
         <div className={styles.root}>
-            <div className={styles.title}>I'M A TITLE</div>
+            <div className={styles.title}>CaliBands</div>
+            <h2 className={styles0.header1}>Vision Statement</h2>
             <div className={styles.paragraph}>
                 <div className={styles.text}>
-                    I’m a paragraph. Add your own text and edit me on properties panel on the right.
-                    It’s easy. Just select me and make changes to the font on the styles panel on
-                    the right. I’m a great place for you to tell a story and let your viewers know a
-                    little more about you.
+                    A future where every young musician in the Inland Empire experiences the power
+                    of marching arts, empowered by access to professional resources, innovative
+                    education, and strong community support in their high school marching bands.
                 </div>
             </div>
             <button className={classNames(commonStyles.primaryButton, styles.button)}>
-                Learn more
+                Member Portal
             </button>
             <img
                 src="https://images.unsplash.com/photo-1622542796254-5b9c46ab0d2f?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dwixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
