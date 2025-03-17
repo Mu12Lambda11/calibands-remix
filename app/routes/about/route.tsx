@@ -1,6 +1,7 @@
 import { LinksFunction, LoaderFunctionArgs, MetaFunction } from '@remix-run/node';
 import { getUrlOriginWithPath } from '~/utils';
 import styles from './about.module.scss';
+import styles0 from './route.module.scss';
 
 export const loader = ({ request }: LoaderFunctionArgs) => {
     return { canonicalUrl: getUrlOriginWithPath(request.url) };
@@ -9,20 +10,46 @@ export const loader = ({ request }: LoaderFunctionArgs) => {
 export default function AboutPage() {
     return (
         <div className={styles.root}>
-            <div className={styles.text}>
-                <h1 className={styles.title}>I'M A TITLE</h1>
-                <p className={styles.paragraph}>
-                    I’m a paragraph. Add your own text and edit me on properties panel on the right.
-                    It’s easy. Just select me and make changes to the font on the styles panel on
-                    the right. I’m a great place for you to tell a story and let your viewers know a
-                    little more about you.
-                </p>
+            <div className={styles0.div1}>
+                <div className={styles.text}>
+                    <h1 className={styles.title}>Mission Statement</h1>
+                    <p className={styles.paragraph}>
+                        Cali Bands fosters a thriving and inclusive marching band culture by
+                        providing essential music education resources, drill writing tools, and
+                        administrative support.
+                    </p>
+                    <p className={styles.paragraph}>
+                        Through collaborative workshops, a comprehensive music library, and
+                        connections to industry professionals, we empower band directors,
+                        instructors, and students across the Inland Empire to achieve excellence in
+                        the performing arts and higher education.
+                    </p>
+                </div>
+                <img
+                    src="https://images.unsplash.com/photo-1622542796254-5b9c46ab0d2f?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dwixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                    alt=""
+                    className={styles.image}
+                />
             </div>
-            <img
-                src="https://images.unsplash.com/photo-1622542796254-5b9c46ab0d2f?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dwixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                alt=""
-                className={styles.image}
-            />
+            <div className={styles0.div1}>
+                <img
+                    src="https://images.unsplash.com/photo-1622542796254-5b9c46ab0d2f?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dwixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                    alt=""
+                    className={styles.image}
+                />
+                <div className={styles.text}>
+                    <h1 className={styles.title}>What We Offer</h1>
+                    <p className={styles.paragraph}>Membership comes with access to:</p>
+                    <ul>
+                        <li>Music</li>
+                        <li>Library </li>
+                        <li>Drill Library</li>
+                        <li>Optional Leadership Clinics</li>
+                        <li>College Workshops</li>
+                        <li>Administration Consultation</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 }
