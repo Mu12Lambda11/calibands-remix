@@ -1,60 +1,74 @@
 {
-  "$schema": "https://wixplosives.github.io/codux-config-schema/codux.config.schema.json",
-  "boardGlobalSetup": "./_codux/board-global-setup.ts",
-  "componentsDiscovery": {
-    "include": ["src/**"],
-    "exclude": ["_codux/component-templates/**"]
-  },
-  "boardsPath": "_codux/boards",
-  "newComponent": {
-    "componentsPath": "src/components",
-    "templatesPath": "_codux/component-templates"
-  },
-  "safeRender": {
-    "maxInstancesPerComponent": 1000
-  },
-  "scripts": {
-    "install": {
-      "title": "Install",
-      "description": "Run install",
-      "command": "npm i",
-      "trigger": ["checkout", "pull", "setup"]
+    "$schema": "https://wixplosives.github.io/codux-config-schema/codux.config.schema.json",
+    "boardGlobalSetup": "./_codux/board-global-setup.ts",
+    "componentsDiscovery": {
+        "include": [
+            "src/**"
+        ],
+        "exclude": [
+            "_codux/component-templates/**"
+        ]
+    },
+    "boardsPath": "_codux/boards",
+    "newComponent": {
+        "componentsPath": "src/components",
+        "templatesPath": "_codux/component-templates"
+    },
+    "safeRender": {
+        "maxInstancesPerComponent": 1000
+    },
+    "scripts": {
+        "install": {
+            "title": "Install",
+            "description": "Run install",
+            "command": "npm i",
+            "trigger": [
+                "checkout",
+                "pull",
+                "setup"
+            ]
+        }
+    },
+    "styling": {
+        "solution": "scss modules"
+    },
+    "styleFilesConfig": {
+        "commonStyleFilePattern": "**/src/styles/**"
+    },
+    "resolve": {
+        "alias": {
+            "@styles": "./src/styles",
+            "@styles/*": "./src/styles/*",
+            "/*": "./*",
+            "~/*": "./src/*",
+            "node:fs": false,
+            "node:fs/promises": false,
+            "node:path": false,
+            "node:crypto": false,
+            "crypto": false,
+            "node:stream": false,
+            "stream": false,
+            "node:os": false,
+            "node:util": false,
+            "node:events": false,
+            "node:url": false,
+            "node:buffer": false,
+            "node:assert": false
+        }
+    },
+    "svgLoader": "both",
+    "addPanel": {
+        "assets": [
+            "@codux-boards/react-bootstrap",
+            "@codux-boards/react-semantic",
+            "@codux-boards/react-nivo",
+            "@codux-boards/react-blueprint"
+        ]
+    },
+    "externalProviders": {
+        "wix": {
+            "projectId": "11bf58ac-b516-4a83-a88c-ab86a62a8c9a",
+            "metaSiteId": "8f15ab62-fa3f-4491-90d3-d360c74c3433"
+        }
     }
-  },
-  "styling": {
-    "solution": "scss modules"
-  },
-  "styleFilesConfig": {
-    "commonStyleFilePattern": "**/src/styles/**"
-  },
-  "resolve": {
-    "alias": {
-      "@styles": "./src/styles",
-      "@styles/*": "./src/styles/*",
-      "/*": "./*",
-      "~/*": "./src/*",
-      "node:fs": false,
-      "node:fs/promises": false,
-      "node:path": false,
-      "node:crypto": false,
-      "crypto": false,
-      "node:stream": false,
-      "stream": false,
-      "node:os": false,
-      "node:util": false,
-      "node:events": false,
-      "node:url": false,
-      "node:buffer": false,
-      "node:assert": false
-    }
-  },
-  "svgLoader": "both",
-  "addPanel": {
-    "assets": [
-      "@codux-boards/react-bootstrap",
-      "@codux-boards/react-semantic",
-      "@codux-boards/react-nivo",
-      "@codux-boards/react-blueprint"
-    ]
-  }
 }
