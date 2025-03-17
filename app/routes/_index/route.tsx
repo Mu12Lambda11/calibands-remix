@@ -21,7 +21,10 @@ export default function HomePage() {
                     education, and strong community support in their high school marching bands.
                 </div>
             </div>
-            <button className={classNames(commonStyles.primaryButton, styles.button)}>
+            <button
+                className={classNames(commonStyles.primaryButton, styles.button)}
+                onClick={undefined}
+            >
                 Member Portal
             </button>
             <img
