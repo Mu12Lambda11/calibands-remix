@@ -2,6 +2,8 @@ import { LinksFunction, LoaderFunctionArgs, MetaFunction } from '@remix-run/node
 import { getUrlOriginWithPath } from '~/utils';
 import styles from './about.module.scss';
 import styles0 from './route.module.scss';
+import ConcordBlueCropJpg from '../../../src/assets/img/bands/concord blue crop.jpg';
+import BlueDevilsCropJpg from '../../../src/assets/img/bands/blue devils crop.jpg';
 
 export const loader = ({ request }: LoaderFunctionArgs) => {
     return { canonicalUrl: getUrlOriginWithPath(request.url) };
@@ -25,18 +27,10 @@ export default function AboutPage() {
                         the performing arts and higher education.
                     </p>
                 </div>
-                <img
-                    src="https://images.unsplash.com/photo-1622542796254-5b9c46ab0d2f?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dwixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                    alt=""
-                    className={styles.image}
-                />
+                <img src={ConcordBlueCropJpg} alt="" className={styles.image} />
             </div>
             <div className={styles0.div1}>
-                <img
-                    src="https://images.unsplash.com/photo-1622542796254-5b9c46ab0d2f?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dwixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                    alt=""
-                    className={styles.image}
-                />
+                <img src={BlueDevilsCropJpg} alt="" className={styles.image} />
                 <div className={styles.text}>
                     <h1 className={styles.title}>What We Offer</h1>
                     <p className={styles.paragraph}>Membership comes with access to:</p>
