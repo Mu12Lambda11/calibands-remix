@@ -17,9 +17,10 @@ export default function HomePage() {
             <h2 className={styles0.header1}>Vision Statement</h2>
             <div className={styles.paragraph}>
                 <div className={styles.text}>
-                    A future where every young musician in the Inland Empire experiences the power
-                    of marching arts, empowered by access to professional resources, innovative
-                    education, and strong community support in their high school marching bands.
+                    A future where every young musician in the Southern California experiences the
+                    power of marching arts, empowered by access to professional resources,
+                    innovative education, and strong community support in their high school marching
+                    bands.
                 </div>
             </div>
             <button
