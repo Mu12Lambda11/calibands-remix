@@ -1,5 +1,7 @@
 import '../src/styles/index.scss';
 
+import '../src/tailwind.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'semantic-ui-css/semantic.min.css';
 import '@blueprintjs/core/lib/css/blueprint.css';
