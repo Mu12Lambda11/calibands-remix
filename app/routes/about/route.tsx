@@ -13,6 +13,21 @@ export default function AboutPage() {
     return (
         <div className={styles.root}>
             <div className={styles0.div1}>
+                <img src={BlueDevilsCropJpg} alt="" className={styles.image} />
+                <div className={styles.text}>
+                    <h1 className={styles.title}>What We Offer</h1>
+                    <p className={styles.paragraph}>Membership comes with access to:</p>
+                    <ul>
+                        <li>Music</li>
+                        <li>Library </li>
+                        <li>Drill Library</li>
+                        <li>Optional Leadership Clinics</li>
+                        <li>College Workshops</li>
+                        <li>Administration Consultation</li>
+                    </ul>
+                </div>
+            </div>
+            <div className={styles0.div1}>
                 <div className={styles.text}>
                     <h1 className={styles.title}>Mission Statement</h1>
                     <p className={styles.paragraph}>
@@ -28,21 +43,6 @@ export default function AboutPage() {
                     </p>
                 </div>
                 <img src={ConcordBlueCropJpg} alt="" className={styles.image} />
-            </div>
-            <div className={styles0.div1}>
-                <img src={BlueDevilsCropJpg} alt="" className={styles.image} />
-                <div className={styles.text}>
-                    <h1 className={styles.title}>What We Offer</h1>
-                    <p className={styles.paragraph}>Membership comes with access to:</p>
-                    <ul>
-                        <li>Music</li>
-                        <li>Library </li>
-                        <li>Drill Library</li>
-                        <li>Optional Leadership Clinics</li>
-                        <li>College Workshops</li>
-                        <li>Administration Consultation</li>
-                    </ul>
-                </div>
             </div>
         </div>
     );
