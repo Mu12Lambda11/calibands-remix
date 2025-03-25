@@ -29,7 +29,7 @@ export default function Contact() {
                     <div className={styles.div6}>
                         <h3>Linkedin</h3>
                         <p>
-                            For LinkedIn, copy and paste the address below or click on the email
+                            For LinkedIn, copy and paste the address below or click on the LinkedIn
                             icon:
                         </p>
                         <ul>
