@@ -4,6 +4,7 @@ import styles from './about.module.scss';
 import styles0 from './route.module.scss';
 import ConcordBlueCropJpg from '../../../src/assets/img/bands/concord blue crop.jpg';
 import BlueDevilsCropJpg from '../../../src/assets/img/bands/blue devils crop.jpg';
+import classNames from 'classnames';
 
 export const loader = ({ request }: LoaderFunctionArgs) => {
     return { canonicalUrl: getUrlOriginWithPath(request.url) };
@@ -12,7 +13,7 @@ export const loader = ({ request }: LoaderFunctionArgs) => {
 export default function AboutPage() {
     return (
         <div className={styles.root}>
-            <div className={styles0.div1}>
+            <div className={styles0.div2}>
                 <img src={BlueDevilsCropJpg} alt="" className={styles.image} />
                 <div className={styles.text}>
                     <h1 className={styles.title}>What We Offer</h1>
@@ -27,7 +28,7 @@ export default function AboutPage() {
                     </ul>
                 </div>
             </div>
-            <div className={styles0.div1}>
+            <div className={styles0.div3}>
                 <div className={styles.text}>
                     <h1 className={styles.title}>Mission Statement</h1>
                     <p className={styles.paragraph}>
