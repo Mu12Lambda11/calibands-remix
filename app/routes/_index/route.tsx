@@ -26,12 +26,14 @@ export default function HomePage() {
                     bands.
                 </div>
             </div>
-            <button
-                className={classNames(commonStyles.primaryButton, styles.button)}
-                onClick={undefined}
-            >
-                Member Portal
-            </button>
+            <a href="https://www.dropbox.com/" className={styles0.a1}>
+                <button
+                    className={classNames(commonStyles.primaryButton, styles.button)}
+                    onClick={undefined}
+                >
+                    Member Portal
+                </button>
+            </a>
         </div>
     );
 }
