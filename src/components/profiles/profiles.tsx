@@ -1,8 +1,8 @@
 import styles from './profiles.module.scss';
 import cx from 'classnames';
-import JacoboHerreraJpg from '../../assets/img/profiles/jacobo herrera.jpg';
 import SamPerezPng from '../../assets/img/profiles/sam perez.png';
 import DrJacobVogelPng from '../../assets/img/profiles/dr. jacob vogel.png';
+import JacoboHerreraD4J1XFYtJpg from '../../../build/client/assets/jacobo herrera-D4J1xFYt.jpg';
 
 export interface ProfilesProps {
     className?: string;
@@ -19,15 +19,15 @@ export const Profiles = ({ className }: ProfilesProps) => {
             <div className={styles.div3}>
                 <div>
                     <img
-                        src={JacoboHerreraJpg}
-                        alt="Jacobo Herrera.jpg"
+                        src={JacoboHerreraD4J1XFYtJpg}
+                        alt="Sam Perez.png"
                         className={styles['profile-pic']}
                     />
                 </div>
                 <div className={styles.div2}>
                     <h2 className={styles.header1}>Jacobo Herrera</h2>
-                    <h3>Executive Director</h3>
-                    <p>
+                    <h3>Board Member</h3>
+                    <p className={styles.p4}>
                         Jacobo Herrera graduated from the University of Southern California (USC)
                         with a bachelor’s degree in Music Industry. He has interned for the
                         International Association of Venue Managers’ certification program as an
@@ -46,7 +46,7 @@ export const Profiles = ({ className }: ProfilesProps) => {
                 <div className={styles.div2}>
                     <h2 className={styles.header1}>Sam Perez III</h2>
                     <h3>Board Member</h3>
-                    <p>
+                    <p className={styles.p2}>
                         Samuel Pérez III is in his second year as a graduate student at USC and is
                         serving as the drum major in his fourth year with the Spirit of Troy. After
                         earning a Bachelor’s of Science in Mechanical Engineering from CSULB, he is
@@ -72,7 +72,7 @@ export const Profiles = ({ className }: ProfilesProps) => {
                 <div className={styles.div2}>
                     <h2 className={styles.header1}>Dr. Jacob Vogel</h2>
                     <h3>Board Member</h3>
-                    <p>
+                    <p className={styles.p3}>
                         Dr. Jacob Vogel was named as Director of the USC Trojan Marching Band at the
                         start of 2021, the first to be new to the position in over 50 years. This
                         appointment followed a 12-year tenure as a teaching assistant, assistant

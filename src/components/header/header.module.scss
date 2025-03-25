@@ -9,16 +9,22 @@
 .menu {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    align-content: start;
+    flex-direction: row;
 }
 
 .menuButton {
     padding-right: 22px;
     padding-left: 22px;
     font: var(--button-font);
+    position: static;
 }
 
 .active {
     font-weight: 500;
+    position: static;
+    align-content: start;
 }
 
 .logo {

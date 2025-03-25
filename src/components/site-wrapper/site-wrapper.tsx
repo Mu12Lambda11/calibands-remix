@@ -15,7 +15,7 @@ export interface SiteWrapperProps {
 export const SiteWrapper = ({ className, children }: SiteWrapperProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <Header />
+            <Header className={styles.header} />
             <div className={styles.content}>{children}</div>
             <Footer />
         </div>
