@@ -4,7 +4,6 @@ import { LinksFunction, LoaderFunctionArgs, MetaFunction } from '@remix-run/node
 import commonStyles from '~/styles/common-styles.module.scss';
 import { getUrlOriginWithPath } from '~/utils';
 import styles0 from './route.module.scss';
-import USCRallyWebsiteCalendar1000X6672966088490Jpeg from '../../../src/assets/img/bands/USC-Rally-Website-Calendar-1000x667-2966088490.jpeg';
 
 export const loader = ({ request }: LoaderFunctionArgs) => {
     return { canonicalUrl: getUrlOriginWithPath(request.url) };
@@ -13,8 +12,12 @@ export const loader = ({ request }: LoaderFunctionArgs) => {
 export default function HomePage() {
     return (
         <div className={styles.root}>
-            <div className={styles.title}>CaliBands</div>
-            <h2 className={styles0.header1}>Vision Statement</h2>
+            <div className={styles0.div2}>
+                <div className={styles.title}>CaliBands</div>
+            </div>
+            <div className={styles0.div1}>
+                <h2 className={styles0.header1}>Vision Statement</h2>
+            </div>
             <div className={styles.paragraph}>
                 <div className={styles.text}>
                     A future where every young musician in the Southern California experiences the
@@ -29,11 +32,6 @@ export default function HomePage() {
             >
                 Member Portal
             </button>
-            <img
-                src={USCRallyWebsiteCalendar1000X6672966088490Jpeg}
-                alt=""
-                className={styles.image}
-            />
         </div>
     );
 }

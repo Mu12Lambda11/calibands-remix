@@ -4,15 +4,30 @@
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
-    background-color: var(--snow-white);
+    background-color: rgba(245, 245, 245, 0.65);
     padding-top: 2em;
     padding-bottom: 2em;
+    background-repeat: no-repeat;
+    background-image: url('../../../build/client/assets/USC-Rally-Website-Calendar-1000x667-2966088490-CMJGetF4.jpeg');
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    height: 600px;
+    opacity: 0.88;
 }
 
 .title {
     font: var(--heading1);
     text-align: center;
     letter-spacing: 0.4rem;
+    color: var(--snow-white);
+    font-style: normal;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.55);
+    background-color: #af3434;
+    width: 400px;
+    border-radius: 25px;
 
     @media only screen and (max-width: general.$mobile-width) {
         font-size: 3rem;
@@ -33,6 +48,9 @@
 
 .text {
     width: 60%;
+    color: var(--snow-white);
+    background-color: #af3434;
+    border-radius: 25px;
 }
 
 .button {

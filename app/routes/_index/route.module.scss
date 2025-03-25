@@ -1,8 +1,22 @@
 .header1 {
     position: relative;
     left: 0px;
-    color: var(--bs-gray-700);
+    color: var(--snow-white);
     margin-right: 0px;
     margin-left: 0px;
     text-align: center;
+    background-color: #af3434;
+    border-radius: 25px;
+    align-content: center;
+    width: 400px;
+}
+.div1 {
+    align-content: start;
+    display: flex;
+    justify-content: center;
+}
+.div2 {
+    display: flex;
+    align-content: start;
+    justify-content: center;
 }
