@@ -46,6 +46,14 @@ export const Header = ({ className }: HeaderProps) => {
                 >
                     Resources
                 </NavLink>
+                <NavLink
+                    to={ROUTES.contact.to()}
+                    className={({ isActive }) =>
+                        classNames(styles.menuButton, { [styles.active]: isActive })
+                    }
+                >
+                    Contact Us
+                </NavLink>
             </div>
         </div>
     );
