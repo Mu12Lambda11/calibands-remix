@@ -2,7 +2,7 @@ import styles from './profiles.module.scss';
 import cx from 'classnames';
 import SamPerezPng from '../../assets/img/profiles/sam perez.png';
 import DrJacobVogelPng from '../../assets/img/profiles/dr. jacob vogel.png';
-import JacoboHerreraD4J1XFYtJpg from '../../../build/client/assets/jacobo herrera-D4J1xFYt.jpg';
+import JacoboHerreraJpg from '../../assets/img/profiles/jacobo herrera.jpg';
 
 export interface ProfilesProps {
     className?: string;
@@ -19,7 +19,7 @@ export const Profiles = ({ className }: ProfilesProps) => {
             <div className={styles.div3}>
                 <div>
                     <img
-                        src={JacoboHerreraD4J1XFYtJpg}
+                        src={JacoboHerreraJpg}
                         alt="Sam Perez.png"
                         className={styles['profile-pic']}
                     />
