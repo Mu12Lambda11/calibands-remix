@@ -1,5 +1,7 @@
 import classNames from 'classnames';
 import styles from './site-footer.module.scss';
+import Icons8Email50Png from '../../assets/img/Social/icons8-email-50.png';
+import Icons8Linkedin50Png from '../../assets/img/Social/icons8-linkedin-50.png';
 
 export interface FooterProps {
     className?: string;
@@ -13,14 +15,19 @@ export const Footer = ({ className }: FooterProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles.details}>
-                <div>Contact Us</div>
-                <div className={styles.small}>
-                    Mail: jacobo.calixto24@gmail.com
-                    <br />
-                    LinkedIn: https://www.linkedin.com/in/jacobo-herrera-453895267/
-                </div>
+                <div>CaliBands © 2025</div>
             </div>
-            <div className={styles.social}></div>
+            <div className={styles.social}>
+                <a
+                    href="mailto:jacobo.calixto24@gmail.com?subject=*SUBJECT* - *YOUR NAME HERE*-CaliBands"
+                    className={styles.a1}
+                >
+                    <img src={Icons8Email50Png} className={styles.img1} />
+                </a>
+                <a href="https://www.linkedin.com/in/jacobo-herrera-453895267/">
+                    <img src={Icons8Linkedin50Png} className={styles.img2} />
+                </a>
+            </div>
         </div>
     );
 };
