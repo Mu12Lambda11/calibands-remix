@@ -1,0 +1,63 @@
+.header1 {
+    text-align: center;
+    color: var(--snow-white);
+    padding: 150px;
+}
+.div1 {
+    background-repeat: no-repeat;
+    background-image: url(../../../src/assets/img/bands/madison-3690653704.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: white;
+}
+.div2 {
+    display: flex;
+    flex-direction: column;
+}
+.header2 {
+    text-align: center;
+}
+.div3 {
+    display: flex;
+    flex-direction: column;
+}
+.div4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0px;
+    padding: 0px;
+    align-content: center;
+    justify-content: center;
+}
+.header3 {
+    text-align: center;
+}
+.a1 {
+    background-repeat: no-repeat;
+    background-image: url('../../../src/assets/img/Social/icons8-email-50.png');
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+.a2 {
+    text-align: start;
+}
+.img1 {
+    max-width: none;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+.div5 {
+    padding: 50px;
+}
+.div6 {
+    padding: 50px;
+}
