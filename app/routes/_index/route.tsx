@@ -26,6 +26,22 @@ export default function HomePage() {
                     bands.
                 </div>
             </div>
+            <div className={styles0.div1}>
+                <h2 className={styles0.header1}>What We Offer</h2>
+            </div>
+            <div className={styles0.div3}>
+                <div className={styles.paragraph}>
+                    <div className={styles.text}>Membership comes with access to:</div>
+                </div>
+                <ul>
+                    <li className={styles0.li1}>Music</li>
+                    <li className={styles0.li1}>Library</li>
+                    <li className={styles0.li1}>Drill Library</li>
+                    <li className={styles0.li1}>Optional Leadership Clinics</li>
+                    <li className={styles0.li1}>College Workshops</li>
+                    <li className={styles0.li1}>Administration Consultation</li>
+                </ul>
+            </div>
             <a href="https://www.dropbox.com/" className={styles0.a1}>
                 <button
                     className={classNames(commonStyles.primaryButton, styles.button)}

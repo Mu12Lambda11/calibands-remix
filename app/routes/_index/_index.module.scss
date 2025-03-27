@@ -14,8 +14,9 @@
     background-attachment: scroll;
     background-origin: padding-box;
     background-clip: border-box;
-    height: 600px;
+    height: 750px;
     opacity: 0.88;
+    align-items: center;
 }
 
 .title {
@@ -38,7 +39,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 0em;
     font: var(--paragraph1);
 
     @media only screen and (max-width: general.$mobile-width) {

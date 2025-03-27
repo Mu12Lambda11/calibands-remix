@@ -25,3 +25,20 @@
     justify-content: center;
     align-content: center;
 }
+.div3 {
+    background-color: #af3434;
+    border-radius: 20px;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.li1 {
+    text-align: center;
+    font-family: DM Sans, sans-serif;
+    line-height: 24px;
+    font-size: 18px;
+    color: var(--snow-white);
+}
