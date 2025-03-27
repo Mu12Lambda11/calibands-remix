@@ -17,7 +17,7 @@ export const Profiles = ({ className }: ProfilesProps) => {
         <div className={cx(styles.root, className)}>
             <h1 className={styles.header2}>Profiles</h1>
             <div className={styles.div3}>
-                <div>
+                <div className={styles.div4}>
                     <img
                         src={JacoboHerreraJpg}
                         alt="Sam Perez.png"
@@ -26,7 +26,7 @@ export const Profiles = ({ className }: ProfilesProps) => {
                 </div>
                 <div className={styles.div2}>
                     <h2 className={styles.header1}>Jacobo Herrera</h2>
-                    <h3>Board Member</h3>
+                    <h3 className={styles.header3}>Board Member</h3>
                     <p className={styles.p4}>
                         Jacobo Herrera graduated from the University of Southern California (USC)
                         with a bachelor’s degree in Music Industry. He has interned for the
@@ -40,12 +40,12 @@ export const Profiles = ({ className }: ProfilesProps) => {
                 </div>
             </div>
             <div className={styles.div3}>
-                <div>
+                <div className={styles.div4}>
                     <img src={SamPerezPng} alt="Sam Perez.png" className={styles['profile-pic']} />
                 </div>
                 <div className={styles.div2}>
                     <h2 className={styles.header1}>Sam Perez III</h2>
-                    <h3>Board Member</h3>
+                    <h3 className={styles.header3}>Board Member</h3>
                     <p className={styles.p2}>
                         Samuel Pérez III is in his second year as a graduate student at USC and is
                         serving as the drum major in his fourth year with the Spirit of Troy. After
@@ -62,7 +62,7 @@ export const Profiles = ({ className }: ProfilesProps) => {
                 </div>
             </div>
             <div className={styles.div3}>
-                <div>
+                <div className={styles.div4}>
                     <img
                         src={DrJacobVogelPng}
                         alt="Dr. Jacob Vogel.png"
@@ -71,7 +71,7 @@ export const Profiles = ({ className }: ProfilesProps) => {
                 </div>
                 <div className={styles.div2}>
                     <h2 className={styles.header1}>Dr. Jacob Vogel</h2>
-                    <h3>Board Member</h3>
+                    <h3 className={styles.header3}>Board Member</h3>
                     <p className={styles.p3}>
                         Dr. Jacob Vogel was named as Director of the USC Trojan Marching Band at the
                         start of 2021, the first to be new to the position in over 50 years. This

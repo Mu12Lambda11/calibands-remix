@@ -2,6 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-left: 40px;
+    justify-content: center;
+    align-content: center;
 }
 .profile-pic {
     width: 288px;
@@ -9,18 +12,22 @@
     position: relative;
     border-radius: 50%;
     border: 0px solid black;
+    align-content: center;
 }
 .div1 {
     width: 200px;
 }
 .header1 {
     object-fit: fill;
+    align-content: start;
+    text-align: center;
 }
 .div2 {
-    align-content: start;
+    align-content: center;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: center;
 }
 .div3 {
     display: flex;
@@ -46,5 +53,19 @@
     text-align: center;
 }
 .p4 {
+    text-align: center;
+}
+.div4 {
+    display: flex;
+    justify-content: center;
+}
+.header3 {
+    text-align: center;
+}
+.div5 {
+    display: flex;
+    justify-content: center;
+}
+.header4 {
     text-align: center;
 }
