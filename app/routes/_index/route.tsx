@@ -34,8 +34,7 @@ export default function HomePage() {
                     <div className={styles.text}>Membership comes with access to:</div>
                 </div>
                 <ul>
-                    <li className={styles0.li1}>Music</li>
-                    <li className={styles0.li1}>Library</li>
+                    <li className={styles0.li1}>Music Library</li>
                     <li className={styles0.li1}>Drill Library</li>
                     <li className={styles0.li1}>Optional Leadership Clinics</li>
                     <li className={styles0.li1}>College Workshops</li>
