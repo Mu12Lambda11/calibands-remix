@@ -38,8 +38,8 @@ export default function AboutPage() {
                     <p className={styles.paragraph}>
                         Through collaborative workshops, a comprehensive music library, and
                         connections to industry professionals, we empower band directors,
-                        instructors, and students across the Inland Empire to achieve excellence in
-                        the performing arts and higher education.
+                        instructors, and students across the Southern California to achieve
+                        excellence in the performing arts and higher education.
                     </p>
                 </div>
                 <img src={ConcordBlueCropJpg} alt="" className={styles.image} />
