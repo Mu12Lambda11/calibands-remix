@@ -42,6 +42,23 @@ export default function Contact() {
                             <img src={Icons8Linkedin50Png} className={styles.img1} />
                         </a>
                     </div>
+                    <div className={styles.div5}>
+                        <h3>Interested in Freelance?</h3>
+                        <p>Are you a freelance field show music or drill writer?</p>
+                        <p>
+                            Please provide your name, portfolio, resume, experience, and anything
+                            else you think is relevant for consideration.
+                        </p>
+                        <ul>
+                            <li>jacobo.calixto24@gmail.com</li>
+                        </ul>
+                        <a
+                            href="mailto:jacobo.calixto24@gmail.com?subject=FREELANCE - *YOUR NAME HERE*-CaliBands"
+                            className={styles.a2}
+                        >
+                            <img src={Icons8Email50Png} className={styles.img1} />
+                        </a>
+                    </div>
                 </div>
                 <div>
                     <h2 className={styles.header3}>Feel Free to Contact Us!</h2>

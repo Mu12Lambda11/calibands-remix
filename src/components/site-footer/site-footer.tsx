@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import styles from './site-footer.module.scss';
 import Icons8Email50Png from '../../assets/img/Social/icons8-email-50.png';
 import Icons8Linkedin50Png from '../../assets/img/Social/icons8-linkedin-50.png';
+import { NavLink } from 'react-router-dom';
 
 export interface FooterProps {
     className?: string;
@@ -16,6 +17,9 @@ export const Footer = ({ className }: FooterProps) => {
         <div className={classNames(styles.root, className)}>
             <div className={styles.details}>
                 <div>CaliBands © 2025</div>
+                <div>
+                    <NavLink to="/contact">Interested in freelance work?</NavLink>
+                </div>
             </div>
             <div className={styles.social}>
                 <a
