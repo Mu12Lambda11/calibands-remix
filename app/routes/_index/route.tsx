@@ -13,7 +13,7 @@ export default function HomePage() {
     return (
         <div className={styles.root}>
             <div className={styles0.div2}>
-                <div className={styles.title}>CaliBands</div>
+                <div className={styles.title}>Cali Bands</div>
             </div>
             <div className={styles0.div1}>
                 <h2 className={styles0.header1}>Vision Statement</h2>
