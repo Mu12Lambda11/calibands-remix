@@ -19,8 +19,7 @@ export default function AboutPage() {
                     <h1 className={styles.title}>What We Offer</h1>
                     <p className={styles.paragraph}>Membership comes with access to:</p>
                     <ul>
-                        <li>Music</li>
-                        <li>Library </li>
+                        <li>Music Library</li>
                         <li>Drill Library</li>
                         <li>Optional Leadership Clinics</li>
                         <li>College Workshops</li>
